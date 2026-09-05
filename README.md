@@ -11,6 +11,10 @@ Repositório do aluno CAUA ISAQUE DOS SANTOS SILVA.
 
 **Portfólio Online**
 
+Esse é o meu portfólio, Acesse-o para ver a minha trajetória do curso de Desenvolvimento de Software Multiplataforma da Faculdade Fatec de Jacareí
+
 🔗 **[Acessar o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392613024/)**
 
 ---
+
+**FATEC Jacareí - Desenvolvimento de Software Multiplataforma**
