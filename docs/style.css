@@ -32,10 +32,10 @@ header a{
     color: #5c5c5c;
     text-decoration: none;
     display: inline-block;
-    transition: 2s;
+    transition: .2s;
 }
 
-header a:houver{
+header a:hover{
     color: #fff;
     transform: scale(1.05);
 }
@@ -59,6 +59,6 @@ header .btn-contato button{
     cursor: pointer;
 }
 
-header .btn-contato button:houver{
+header .btn-contato button:hover{
     box-shadow: 0px 0px 8px #00ff08;
 }
