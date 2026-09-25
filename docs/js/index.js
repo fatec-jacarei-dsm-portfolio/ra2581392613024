@@ -1,6 +1,3 @@
-const menuButton = document.getElementById("menuButton");
-const nav = document.getElementById("nav");
-
 const projectCards = document.querySelectorAll(".project-card");
 
 const scrumModal = document.getElementById("scrumModal");
@@ -40,35 +37,35 @@ const projects = {
       },
       {
         name: "Alef Gabriel Oliveira",
-        image: "assets/img/alef icon.jpeg",
+        image: "images/alef icon.jpeg",
       },
       {
         name: "Cauã Silva",
-        image: "assets/img/caua icon.jpeg",
+        image: "images/caua icon.jpeg",
       },
       {
         name: "Igor Iansen",
-        image: "assets/img/igor icon.jpeg",
+        image: "images/igor icon.jpeg",
       },
       {
         name: "Lorenzo Nogueira",
-        image: "assets/img/lorenzo icon.jpeg",
+        image: "images/lorenzo icon.jpeg",
       },
       {
         name: "Renam Santos",
-        image: "assets/img/renam icon.jpeg",
+        image: "images/renam icon.jpeg",
       },
       {
         name: "Thiago Souza Santos",
-        image: "assets/img/thiago icon.jpeg",
+        image: "images/thiago icon.jpeg",
       },
       {
         name: "Vitor Hirch",
-        image: "assets/img/vitor icon.jpeg",
+        image: "images/vitor icon.jpeg",
       },
       {
         name: "Patricia Rosa Maidana",
-        image: "assets/img/patricia icon.jpeg",
+        image: "images/patricia icon.jpeg",
       },
     ],
   },
@@ -87,18 +84,6 @@ const projects = {
     team: [],
   },
 };
-
-menuButton.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
-
-const navLinks = document.querySelectorAll(".nav a");
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("active");
-  });
-});
 
 function openModal(projectId) {
   const project = projects[projectId];

@@ -23,10 +23,10 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
@@ -35,11 +35,11 @@
                     <button>Contato</button>
                 </a>
             </div>
-        </div><!--interface-->
+        </div><!--interface-->  
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="inicio">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -63,7 +63,7 @@
             </div><!--interface-->
         </section><!--topo-do-site-->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -85,7 +85,7 @@
             </div><!--interface-->
         </section><!--especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -171,6 +171,55 @@
           </div>
         </div>
       </section>
+      <div class="modal" id="scrumModal" aria-hidden="true">
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+            <div>
+                <p id="modalSemester"></p>
+                <h2 id="modalTitle"></h2>
+            </div>
+
+            <button id="modalClose" aria-label="Fechar">
+                &times;
+            </button>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="modal-project-image" id="modalProjectImage">
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <p id="modalDescription"></p>
+
+            <h3>Tecnologias</h3>
+            <div id="modalTechnologies"></div>
+
+            <h3>Minha participação</h3>
+            <p id="modalContribution"></p>
+
+            <h3>Equipe</h3>
+            <div id="teamGrid"></div>
+
+            <a
+                id="modalRepository"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ver repositório
+            </a>
+
+        </div>
+
+    </div>
+</div>
     </main>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
