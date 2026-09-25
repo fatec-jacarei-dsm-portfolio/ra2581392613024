@@ -71,3 +71,8 @@ header .btn-contato button:hover{
 section.topo-do-site{
     padding: 40px 4%;
 }
+
+.minha-foto{
+    width: 300px;
+    height: auto;
+}
