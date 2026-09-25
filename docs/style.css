@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #202020;
+    background-color: #161616;
     height: 100vh;
 }
 
@@ -25,15 +25,15 @@ body{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00FF08;
+    background-color: #008cff;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
 }
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #00ff08;
+button:hover{
+    box-shadow: 0px 0px 8px #008cff;
     transform: scale(1.05);
 }
 
@@ -44,7 +44,19 @@ h2.titulo{
 }
 
 h2.titulo span{
-    color: #00FF08;
+    color: #ffee00;
+}
+
+h3.html-especialidade{
+    color: #ff5100;
+}
+
+h3.javascript-especialidade{
+    color: #ffee00;
+}
+
+h3.css-especialidade{
+    color: #008cff;
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -53,7 +65,7 @@ header{
 }
 
 header .logo .dsm-icon{
-    width: 40px;
+    width: 60px;
     height: auto;
 }
 
