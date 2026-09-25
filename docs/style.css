@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #161616;
+    background-color: #131313;
     height: 100vh;
 }
 
@@ -61,6 +61,22 @@ h3.css-especialidade{
 
 h2.sobre-mim{
     color: #008cff;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.section-heading {
+  margin-bottom: 55px;
+}
+
+.section-heading h2 {
+  margin-top: 8px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -118,7 +134,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: #00FF08;
+    color: #008cff;
 }
 
 .topo-do-site .txt-topo-site p{
@@ -196,4 +212,246 @@ section.sobre .flex{
 .sobre .txt-sobre p{
     margin: 20px 0;
     text-align: justify;
+}
+
+/* ESTILO DO PROJETOS */
+section.section-projects-section{
+    padding: 40px 4%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.projects-grid,
+  .knowledge-grid {
+    grid-template-columns: 1fr;
+  }
+
+.project-card {
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 35px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.project-card:hover,
+.project-card:focus {
+  outline: none;
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 7px 7px 0 var(--primary);
+}
+
+.project-card h3 {
+  margin-bottom: 12px;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+}
+
+.project-card p {
+  max-width: 550px;
+  color: var(--text-light);
+}
+
+.project-number {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.project-semester {
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.presentation-card .project-semester {
+  color: var(--accent);
+}
+
+.project-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-technologies span {
+  padding: 5px 8px;
+  border: 1px solid var(--border);
+  color: var(--text-light);
+  font-size: 0.63rem;
+  font-weight: 700;
+}
+
+.project-arrow {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.project-placeholder h3 {
+  color: var(--text-light);
+}
+
+@media (max-width: 850px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 20px 20px;
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 100px 0;
+  }
+
+  .hero-content,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    gap: 60px;
+  }
+
+  .about-grid {
+    gap: 45px;
+  }
+
+  .about-image {
+    max-width: 450px;
+  }
+
+  .projects-grid,
+  .knowledge-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .presentation-card {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .section {
+    padding: 75px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 15vw, 4.5rem);
+  }
+
+  .hero-file {
+    box-shadow: 5px 5px 0 var(--dark);
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .stat:last-child {
+    border-bottom: 0;
+  }
+
+  .project-card {
+    min-height: 320px;
+    padding: 25px;
+  }
+
+  .presentation-card,
+  .contact-card {
+    padding: 28px;
+  }
+
+  .contact-buttons {
+    justify-content: center;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal {
+    padding: 12px;
+  }
+
+  .modal-content {
+    max-height: 94vh;
+    box-shadow: 5px 5px 0 var(--dark);
+  }
+
+  .modal-header,
+  .modal-body {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .modal-project-image {
+    max-height: 240px;
+  }
+
+  .modal-project-image img {
+    max-height: 240px;
+  }
+
+  .footer-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
