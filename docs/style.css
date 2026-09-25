@@ -47,6 +47,11 @@ h2.titulo span{
     color: #00FF08;
 }
 
+.dsm-icon{
+    width: 50px;
+    height: auto;
+}
+
 /* ESTILO DO CABEÇALHO */
 header{
     padding: 40px 4%;
