@@ -317,3 +317,134 @@ section.projetos{
         font-size: 26px;
     }
 }
+
+
+/* ESTILO DO VÍDEO DE APRESENTAÇÃO */
+section.apresentacao{
+    padding: 60px 4% 90px;
+}
+
+.apresentacao-numero{
+    color: #008cff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.apresentacao h2{
+    color: #fff;
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 45px;
+}
+
+.apresentacao-card{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    align-items: center;
+    gap: 28px;
+    padding: 38px;
+    background-color: #fff;
+    border-radius: 0;
+    color: #131313;
+}
+
+.apresentacao-video{
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.apresentacao-video video{
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    object-fit: contain;
+    background-color: #fff;
+}
+
+.video-placeholder{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+}
+
+.video-play{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3px;
+    border: 2px solid #008cff;
+    border-radius: 50%;
+    color: #008cff;
+    font-size: 20px;
+}
+
+.apresentacao-texto{
+    padding: 10px 15px;
+}
+
+.apresentacao-semestre{
+    color: #ff5100;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.apresentacao-texto h3{
+    color: #131313;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.apresentacao-texto > p:last-child{
+    color: #333;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+@media (max-width: 850px){
+    .apresentacao-card{
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .apresentacao h2{
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 600px){
+    section.apresentacao{
+        padding: 50px 4% 70px;
+    }
+
+    .apresentacao h2{
+        font-size: 32px;
+    }
+
+    .apresentacao-video,
+    .apresentacao-video video,
+    .video-placeholder{
+        min-height: 220px;
+    }
+
+    .apresentacao-card{
+        padding: 18px;
+    }
+}
