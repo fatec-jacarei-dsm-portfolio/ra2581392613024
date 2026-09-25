@@ -114,3 +114,18 @@ section.topo-do-site .flex{
     width: 400px;
     height: auto;
 }
+
+/* ESTILO DO ESPECIALIDADES */
+
+.especialidades .html-icon img{
+    width: 350px;
+    height: auto;
+}
+.especialidades .javascript-icon img{
+    width: 350px;
+    height: auto;
+}
+.especialidades .css-icon img{
+    width: 350px;
+    height: auto;
+}
