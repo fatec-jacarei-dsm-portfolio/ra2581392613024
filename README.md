@@ -5,7 +5,7 @@ Repositório do aluno CAUA ISAQUE DOS SANTOS SILVA.
 
 **Aluno:** Cauã Isaque dos Santos Silva  
 **Curso:** Desenvolvimento de Software Multiplataforma  
-**Turma:** 2º Semestre / Ingressado em 2025
+**Turma:** 2º Semestre / Ingressado em 2026
 
 ---
 
